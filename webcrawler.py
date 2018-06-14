@@ -20,3 +20,6 @@ for container in containers:
     title_container = container.findAll("div", {"class": "fbox-desc"})
     title = title_container[0].h3.span.text.strip()
     print(title)
+
+
+
