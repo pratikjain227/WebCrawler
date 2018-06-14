@@ -8,10 +8,12 @@ connection = urlopen(my_url)
 page_html = connection.read()
 connection.close()
 
+
 # html parsing
 page_soup = BeautifulSoup(page_html, "html.parser")
 containers = page_soup.findAll("div", {"class": "col_one_third"})
 print(len(containers))
+
 
 # extracting the video link and location of shooting
 for container in containers:
